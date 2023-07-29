@@ -3,6 +3,7 @@ func preProcess(s string) string {
 	if n == 0 {
 		return "^$"
 	}
+	
 	result := "^"
 	for i := 0; i < n; i++ {
 		result += "#" + string(s[i])
