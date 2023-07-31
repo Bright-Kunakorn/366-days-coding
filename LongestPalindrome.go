@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println(longestPalindrome("baa"))
+	fmt.Println(longestPalindrome("baagg"))
 }
 
 func reverseString(s string) string {
