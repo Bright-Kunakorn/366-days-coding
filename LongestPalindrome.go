@@ -1,9 +1,11 @@
+package main
+
 func preProcess(s string) string {
 	n := len(s)
 	if n == 0 {
 		return "^$"
 	}
-	
+
 	result := "^"
 	for i := 0; i < n; i++ {
 		result += "#" + string(s[i])
@@ -12,7 +14,7 @@ func preProcess(s string) string {
 	return result
 }
 
-func longestPalindrome(s string) string {
+func longestPalindrome2(s string) string {
 	T := preProcess(s)
 	n := len(T)
 	P := make([]int, n)

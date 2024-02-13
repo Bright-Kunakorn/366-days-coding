@@ -1,3 +1,5 @@
+package main
+
 func longestPalindrome(s string) string {
 	n := len(s)
 	if n <= 1 {

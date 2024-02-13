@@ -1,6 +1,12 @@
+package main
+
+import (
+	"math"
+)
+
 func reverse(x int) int {
-	const INT_MAX = int(^uint32(0) >> 1)
-	const INT_MIN = ^INT_MAX
+	const intMax = int(^uint32(0) >> 1)
+	const intMin = ^intMax
 
 	temps := int(math.Abs(float64(x)))
 	ans := 0
@@ -8,7 +14,7 @@ func reverse(x int) int {
 	for temps > 0 {
 		remainder := temps % 10
 		ans = ans*10 + remainder
-		if ans > INT_MAX || ans < INT_MIN {
+		if ans > intMax || ans < intMin {
 			return 0
 		}
 		temps /= 10

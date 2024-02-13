@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func nSum(nums []int, target int, n int) [][]int {
 	var result [][]int
 	if n < 2 || len(nums) < n {
@@ -27,12 +25,4 @@ func nSum(nums []int, target int, n int) [][]int {
 		}
 	}
 	return result
-}
-
-func main() {
-	nums := []int{2, 7, 4, 0, 9, 5, 1, 3}
-	target := 14
-	n := 4
-	result := nSum(nums, target, n)
-	fmt.Println(result)
 }
