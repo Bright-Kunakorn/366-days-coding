@@ -22,3 +22,7 @@ func Count(n, k int) int {
 
 	return Arr[0]
 }
+
+
+
+
