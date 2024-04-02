@@ -6,9 +6,7 @@ func Count(n, k int) int {
 	for i := 0; i < n; i++ {
 		Arr[i] = i + 1
 	}
-
 	curr := k - 1
-
 	for n > 1 {
 		k = Arr[curr]
 
@@ -22,11 +20,3 @@ func Count(n, k int) int {
 
 	return Arr[0]
 }
-
-
-
-
-
-
-
-
